@@ -110,14 +110,13 @@ h2 {
   height: 44px;
   font-size: 20px;
   cursor: pointer;
-  background-color: #6f4e37;
+  background-color: #ec1713;
   color: white;
   border: none;
   transition: background-color 0.3s ease;
-}
-
-.card-btn:hover {
-  background-color: #4b2c20;
+  &:hover {
+    background-color: #a82521;
+  }
 }
 
 .todo-card p {
