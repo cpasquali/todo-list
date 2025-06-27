@@ -51,14 +51,10 @@ export const Sidebar = () => {
 
   const handleFilterTodo = (e) => {
     if (e.target.value === "complete") {
-      setFilteredTodoList((prevTodoList) =>
-        prevTodoList.filter((t) => t.isCompleted)
-      );
+      setFilteredTodoList(todoList.filter((t) => t.isCompleted));
       setSelectedOption("complete");
     } else if (e.target.value === "incomplete") {
-      setFilteredTodoList((prevTodoList) =>
-        prevTodoList.filter((t) => !t.isCompleted)
-      );
+      setFilteredTodoList(todoList.filter((t) => !t.isCompleted));
       setSelectedOption("incomplete");
     } else {
       setFilteredTodoList(todoList);
