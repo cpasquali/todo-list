@@ -71,6 +71,8 @@ export const Sidebar = () => {
           value={newTodoDescriptcion}
           ref={inputRef}
           onChange={(e) => setNewTodoDescriptcion(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && handleAddTask()}
+          placeholder="Escribe aqui..."
         />
         <p className="error-message-disable" ref={errorMessageRef}>
           Campo incompleto
